@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+
+    <script lang="Javascript">
+
+        function codificar()
+        {
+            var mensagem, chave, tm, i, j = 0, aux;
+
+            mensagem = document.getElementById("mensagemD").value;
+            chave = document.getElementById("chave").value;
+
+            mensagem = mensagem.toUpperCase();
+            chave = chave.toUpperCase();
+            
+        function vigenere(funcao) 
+        {
+
+            var chave = document.getElementById("chave").value;
+            var mensagem = document.getElementById("mensagemD").value;
+
+            var chaveNumerica = lerTexto(chave) ?chaveNumerica = lerTexto(chave) :
+            
+
+        }
+
+
+            document.write(mensagem + "<br>");
+            document.write(chave + "<br>");
+            document.write(mensagemDois);
+            
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Cifra de AutoChave</h1>
+    <p>É nescessário que tanto a chave quanto a mensagem não possuam assentos ou caracteres especiais.</p>
+    <form name="informM">
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            
+            <p>
+                <label for="mensagemD">Informe aqui a mensagem criptografada ou descriptografada : </label>
+            </p>
+            <p>
+                <input type="text" id="mensagemD" nome="mensagemD" placeholder="Ex: Batata com sorvete" required>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Chave</legend>
+
+            <p>
+                <label for="chave">Informe aqui a chave da criptografia : </label>
+            </p>
+            <p>
+                <input type="text" id="chave" name="chave" placeholder="Ex: Pratos" required>
+            </p>
+            <p>
+                A chave deve, necessáriamente, ser menor que a mensagem.
+            </p>
+
+        </fieldset>
+        
+        <fieldset>
+            
+            <legend>Botões</legend>
+            <p>
+                <input type="button" onclick="codificar()" value="Codificar">
+                <input type="button" onclick="descodificar()" value="Descodificar">
+            </p>
+        
+        </fieldset>
+
+    </form>
+
+    <div id="chaveFluxo">
+
+    </div>
+
+</body>
+</html>
